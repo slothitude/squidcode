@@ -137,14 +137,13 @@ class ICAPParser:
                 body_section = name
                 break
 
-        # Read header sections
-        for name, (start, end) in sections.items():
+        # Read header sections — iterate in offset order
+        sorted_sections = sorted(sections.items(), key=lambda x: x[1][0])
+        for name, (start, end) in sorted_sections:
             if name == "req-hdr":
                 req.http_request_headers = await self._read_exact(end - start)
-                await self._readline()  # blank line after headers
             elif name == "res-hdr":
                 req.http_response_headers = await self._read_exact(end - start)
-                await self._readline()  # blank line after headers
             elif name == "null-body":
                 pass  # no body
             elif name in ("res-body", "req-body"):
