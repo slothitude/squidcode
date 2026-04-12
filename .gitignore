@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environment
+.env
+.venv/
+venv/
+
+# Cache & models
+cache_db/
+models/
+
+# Certificates
+squid/ssl_cert/
+*.pem
+*.key
+*.crt
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (keep structure, ignore content)
+data/style_guides/*.md
+!data/style_guides/default.md
+data/glossaries/*.json
+!data/glossaries/general.json

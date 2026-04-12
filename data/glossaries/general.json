@@ -1,0 +1,12 @@
+[
+    {"term": "API", "definition": "Application Programming Interface — a set of protocols for building and integrating software"},
+    {"term": "latency", "definition": "The time delay between a request and the start of a response"},
+    {"term": "cache", "definition": "A temporary storage layer that speeds up repeated data access"},
+    {"term": "proxy", "definition": "An intermediary server that forwards requests between clients and servers"},
+    {"term": "SSE", "definition": "Server-Sent Events — a protocol for pushing real-time updates from server to browser"},
+    {"term": "ICAP", "definition": "Internet Content Adaptation Protocol — used by proxies to transform HTTP content"},
+    {"term": "embedding", "definition": "A numerical vector representation of text that captures semantic meaning"},
+    {"term": "RAG", "definition": "Retrieval-Augmented Generation — enriching LLM prompts with retrieved context"},
+    {"term": "semantic cache", "definition": "A cache that matches queries by meaning similarity rather than exact match"},
+    {"term": "SSL bump", "definition": "A proxy technique for decrypting and inspecting HTTPS traffic using a trusted CA certificate"}
+]
